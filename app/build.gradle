@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.android.books"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile rootProject.ext.supportAppcompactV7
+    compile rootProject.ext.butterknife
+    annotationProcessor rootProject.ext.butterknifeCompiler
+    compile rootProject.ext.retrofit
+    compile rootProject.ext.retrofitGson
+    compile rootProject.ext.okhttpLogging
+    compile rootProject.ext.recyclerviewV7
+    compile rootProject.ext.picasso
+}

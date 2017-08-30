@@ -1,0 +1,25 @@
+ext {
+    minSdkVersion = 15
+    compileSdkVersion = 25
+    targetSdkVersion = 25
+    buildToolsVersion = '25.0.2'
+
+    supportVersion = '25.3.1'
+
+
+    //support libary
+    supportAppcompactV7 = "com.android.support:appcompat-v7:$supportVersion"
+    recyclerviewV7 = "com.android.support:recyclerview-v7:$supportVersion"
+
+    //Image
+    picasso='com.squareup.picasso:picasso:2.5.2'
+
+    //View Inject
+    butterknife = 'com.jakewharton:butterknife:8.5.1'
+    butterknifeCompiler = 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    //retrofit
+    retrofit = 'com.squareup.retrofit2:retrofit:2.3.0'
+    retrofitGson = 'com.squareup.retrofit2:converter-gson:2.3.0'
+    okhttpLogging = 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+}
